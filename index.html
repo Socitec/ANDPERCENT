@@ -4,6 +4,8 @@
   <meta charset="utf-8">
   <title>ANDPERCENT.</title>
   <meta name="description" content="岐阜県のデザイン事務所。伝わるデザインでPRをサポート致します。">
+  <!-- Reset css読み込み -->
+  <link rel="stylesheet" href="stylesheet/destyle.css">
   <!-- Stylesheet読み込み -->
   <link rel="stylesheet" href="stylesheet/stylesheet.css">
   <!-- Font Awesome読み込み -->
@@ -22,19 +24,19 @@
         <div class="menu">
           <ul>
             <a href="#"><li>トップ</li></a>
-            <a href="#"><li>お知らせ</li></a>
-            <a href="#"><li>サービス内容</li></a>
-            <a href="#"><li>制作の流れ</li></a>
-            <a href="#"><li>制作実績</li></a>
-            <a href="#"><li>ANDPERCENT</li></a>
-            <a href="#"><li><span>お問い合わせ</span></li></a>
+            <a href="#news"><li>お知らせ</li></a>
+            <a href="#service"><li>サービス内容</li></a>
+            <a href="#what"><li>制作の流れ</li></a>
+            <a href="#works"><li>制作実績</li></a>
+            <a href="#outline"><li>ANDPERCENT</li></a>
+            <a href="#contact"><li><span>お問い合わせ</span></li></a>
           </ul>
         </div>
         <div class="sns">
           <ul>
-            <a href="#"><li><i class="fab fa-youtube"></i></li></a>
-            <a href="#"><li><i class="fab fa-instagram"></i></li></a>
-            <a href="#"><li><i class="fab fa-twitter"></i></li></a>
+            <a href="https://www.youtube.com/channel/UCSKvMKE6Q0RyAgWbcMA63kw" target="_blank" rel="noopener noreferrer"><li><i class="fab fa-youtube"></i></li></a>
+            <a href="https://www.instagram.com/andpercent_2018/?hl=ja" target="_blank" rel="noopener noreferrer"><li><i class="fab fa-instagram"></i></li></a>
+            <a href="https://twitter.com/andpercent2018" target="_blank" rel="noopener noreferrer"><li><i class="fab fa-twitter"></i></li></a>
           </ul>
         </div>
         <div class="clear"></div> <!-- float解除div -->
@@ -48,8 +50,8 @@
       <img src="image/top.jpg" alt="topview">
       <div class="toptext">
         <p>岐阜県のデザイン事務所</p>
-        <h1><span>伝わるデザイン</span>で<br>
-          <span>PR</span>を<span>サポート</span>致します。
+        <h1><span class="underline">伝わるデザイン</span>で<br>
+          <span class="underline">PR</span>を<span class="underline">サポート</span>致します。
         </h1>
       </div>
     </div>
@@ -65,10 +67,12 @@
 
       </div>
       <div class="buttonarea">
-        <div class="button">
-          <img src="image/button1.png" alt="button">
-          <p>お知らせ一覧</p>
-        </div>
+        <a href="#">
+          <div class="button">
+            <img src="image/button1.png" alt="button">
+            <p>お知らせ一覧</p>
+          </div>
+        </a>
       </div>
     </div>
   </div>
@@ -115,7 +119,7 @@
         <img src="image/meeting.jpg" alt="meeging">
         <div class="innercontents">
           <div class="suggest">
-            <p>私たちは<span>提案力</span>で勝負します。</p>
+            <p>私たちは<span class="underline">提案力</span>で勝負します。</p>
           </div>
           <div class="text">
             <p>2018年から始まった岐阜県を拠点としたデザイン事務所アンドパーセント。現在に至るまでに 数え切れないデザインを担当させていただきました。私たちがデザインを担当する上で、大事にしているのは「必要性」です。どうしてお客様はそれが必要だと思われたのか、それが大事だと考えます。自社製品を幅広い世代に訴求したい、そんな思いをしっかりと汲み取ってデザインしなければ、本当に良いデザインとは言えません。ご依頼いただけるお客様とチームになり、しっかりとしたヒアリングを元にした提案力こそが、私たちの強みだと考えております。</p>
@@ -138,6 +142,7 @@
               <li>DTP</li>
               <li>Other</li>
             </ul>
+            <div class="clear"></div> <!-- float解除div -->
           </div>
         </div>
       </div>
@@ -168,10 +173,12 @@
         </div>
       </div>
       <div class="buttonarea">
-        <div class="button">
-          <img src="image/button1.png" alt="button">
-          <p>制作物一覧</p>
-        </div>
+        <a href="#">
+          <div class="button">
+            <img src="image/button1.png" alt="button">
+            <p>制作物一覧</p>
+          </div>
+        </a>
       </div>
     </div>
   </div>
@@ -241,38 +248,38 @@
               <p>お問合せ内容 / Message<br>
                 <textarea name="inquiry" cols="50" rows="5"></textarea>
               </p>
-              <input type="submit" value="確認画面へ" >
-              </form>
-            </div>
+              <input class="submit button" type="submit" value="確認画面へ" >
+            </form>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Footer -->
-    <footer>
-      <div class="container">
-        <div class="footerlogo">
-          <img src="image/footerlogo.png" alt="logo">
-        </div>
-        <div class="contents">
-          <div class="footerdetails">
-            <div class="company">
-              <p class="companyname">アンドパーセント株式会社</p>
-              <p class="address">〒503-0973 岐阜県大垣市木戸町266-13</p>
-            </div>
-            <div class="office">
-              <table>
-                <tr>
-                  <th>営業時間</th>
-                  <td>10:00 ~ 18:00</td>
-                </tr>
-                <tr>
-                  <th>電話番号</th>
-                  <td>080-4252-0880</td>
-                </tr>
-                <tr>
-                  <th>アドレス</t>
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footerlogo">
+        <img src="image/footerlogo.png" alt="logo">
+      </div>
+      <div class="contents">
+        <div class="footerdetails">
+          <div class="company">
+            <p class="companyname">アンドパーセント株式会社</p>
+            <p class="address">〒503-0973 岐阜県大垣市木戸町266-13</p>
+          </div>
+          <div class="office">
+            <table>
+              <tr>
+                <th>営業時間</th>
+                <td>10:00 ~ 18:00</td>
+              </tr>
+              <tr>
+                <th>電話番号</th>
+                <td>080-4252-0880</td>
+              </tr>
+              <tr>
+                <th>アドレス</t>
                   <td>andpercent.2018@gmail.com</td>
                 </tr>
               </table>
